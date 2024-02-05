@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: flask_bash
+    image: flask_bash
+    build: .
+    ports:
+      - '8000:8000'
+    user: appuser
+    entrypoint: gunicorn --bind 0.0.0.0:8000 "app.app:create_app()"

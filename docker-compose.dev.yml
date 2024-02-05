@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: flask_bash-dev
+    image: flask_bash-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - '8000:8000'
+    user: appuser
+    entrypoint: scripts/dev_start.sh
