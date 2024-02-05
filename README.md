@@ -1,5 +1,13 @@
 # Flask+Bash
 
+## Скачать и запустить
+
+```bash
+git clone https://github.com/vadikball/flask_bash.git
+cd flask_bash
+bash up.sh
+```
+
 ## Запустить приложение
 
 можно с помощью команды (Если установлен docker и docker compose)
